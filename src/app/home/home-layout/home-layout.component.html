@@ -1,0 +1,20 @@
+<h1>{{category | json}}</h1>
+
+<!-- <h1>{{categories}}</h1> -->
+
+<div>
+  <h2 style="color: brown;"> {{category?.title}} </h2>
+
+  <p><span>شناسه کاربری:</span> <span>{{category?.userId }}</span></p>
+</div>
+
+<hr>
+
+<div style="background-color:lightgray;" *ngFor="let item of categories">
+ <p>
+  <span>{{item?.id}}</span>
+  <span>{{item?.title}}</span>
+<span>{{item?.body}}</span>
+
+ </p>
+</div>
