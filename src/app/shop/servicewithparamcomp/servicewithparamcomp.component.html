@@ -1,0 +1,16 @@
+<p>servicewithparamcomp works!</p>
+    <div class="container">
+        <div class="row justify-content-around">
+            <h1>{{param_ | json}}</h1>
+            <!-- <h3 class="text-center">لطفا چند لحظه صبر کنید </h3> -->
+            <div class="card mb-3 mt-3" style="width: 18rem;" *ngFor="let item of param_">
+                <img class="card-img-top" src="{{item?.product_title_fa}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{item?.product_id}}</h5>
+                  <p class="card-text"></p>
+                  <a href="{{item?.product_unit}}" class="btn btn-primary">مشاهده</a>
+                </div>
+              </div>
+        </div>
+    </div>
+

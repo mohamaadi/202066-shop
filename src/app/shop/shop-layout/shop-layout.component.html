@@ -1,15 +1,8 @@
 
 <div class="container">
     <div class="row justify-content-around">
-        <h1>{{shoplist | json}}</h1>
+        <h1>{{shoplistcatigories | json}}</h1>
         <!-- <h3 class="text-center">لطفا چند لحظه صبر کنید </h3> -->
-        <div class="card mb-3 mt-3" style="width: 18rem;" *ngFor="let item of shoplistcatigories">
-            <img class="card-img-top" src="{{item?.url}}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">{{item?.title}}</h5>
-              <p class="card-text"></p>
-              <a href="{{item?.thumbnailUrl}}" class="btn btn-primary">مشاهده</a>
-            </div>
-          </div>
+
     </div>
 </div>
